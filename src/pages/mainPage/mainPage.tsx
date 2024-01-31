@@ -21,7 +21,7 @@ function MainPage() {
 
   const handleScroll = () => {
     if (
-      window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight ||
+      window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 100 ||
       isLoading
     ) {
       return;
@@ -38,6 +38,10 @@ function MainPage() {
 
   useEffect(() => {
     getData();
+
+    if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight) {
+      getData();
+    }
   }, []);
 
   return (
