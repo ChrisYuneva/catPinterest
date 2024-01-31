@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  VITE_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_APP_FIREBASE_AUTH_DOMAIN }}
+  VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
   
 jobs:
   # Single deploy job since we're just deploying
