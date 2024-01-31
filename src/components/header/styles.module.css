@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  background-color: #2196f3;
+  height: 64px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  padding-left: 62px;
+}
+
+.active {
+  background-color: #1e88e5;
+  color: #FFF;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 23px;
+  height: 100%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+.default {
+  color: rgba(255, 255, 255, 0.70);
+}
